@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111827;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#hm-menu{
+    display: none;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left{
+    padding-right: 20px;
+}
+
+.left div{
+    display: flex;
+    flex-direction: row;
+}
+
+.left span{
+    font-size: 18px;
+    color: #fff;
+}
+
+.left img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.left h1{
+    color: #fff;
+}
+
+.left p{
+    color: #9c9e4d;
+}
+
+.right img{
+    width: 400px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.center h2{
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 5px solid #070a9a;
+}
+
+.image-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.image img{
+    width: 250px;
+}
+
+.image p{
+    color: #fff;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.bottom h2{
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 5px solid #070a9a;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.icons img{
+    width: 20px;
+}
+
+@media(max-width: 580px){
+    #hm-menu{
+        display: block;
+        width: 20px;
+        margin: 10px 0 0 10px;
+    }
+
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left{
+        margin: 30px 0;
+    }
+
+    .right img{
+        width: 300px;
+    }
+
+    .center h2{
+        font-size: 30px;
+    }
+
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .image img{
+        width: 200px;
+    }
+
+    .bottom h2{
+        font-size: 30px;
+    }
+
+    .icons{
+        display: flex;
+        gap: 10px;
+        width: 30px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+}
