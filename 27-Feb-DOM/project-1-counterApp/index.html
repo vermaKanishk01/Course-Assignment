@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+            border: none;
+            width: 400px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin: 200px auto;
+        }
+        .container span{
+            border: 1px solid black;
+            padding: 5px 10px;
+        }
+
+        .container div{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        button{
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter App</h1>
+        <div>
+            <button id="decrement_btn">Decrement by 1</button>
+            <span id="displayValue">0</span>
+            <button id="increment_btn">Increment by 1</button>
+        </div>
+        <button id="reset_btn">Reset</button>
+    </div>
+
+    <script>
+        const increment_btn = document.getElementById("increment_btn");
+        const decrement_btn = document.getElementById("decrement_btn");
+        const reset_btn = document.getElementById('reset_btn');
+        const result = document.getElementById("displayValue");
+
+        increment_btn.addEventListener("click", function(){
+            result.textContent++
+        });
+
+        decrement_btn.addEventListener("click", function(){
+            result.textContent--;
+        });
+
+        reset_btn.addEventListener("click", function(){
+            result.textContent = 0;
+        });
+    </script>
+</body>
+</html>
